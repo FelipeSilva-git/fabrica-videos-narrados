@@ -1,0 +1,35 @@
+# STORYBOARD — MENINA INCA — PARTE 2
+
+[01] Elas não estavam ali por acaso...
+video: videos/anim-inca-cap2.mp4
+transicao: corte
++ capacocha
+documento: imagens/doc-r22.png
+efeito: zoom
+
+[02] Todo ano, cada canto do império...
+video: videos/anim-m02-para-cusco.mp4
+
+[03] Em Cusco havia festas...
+documento: imagens/doc-r14.png
+efeito: zoom
++ mandadas de volta
+imagem: imagens/ia-01-procissao.png
+efeito: zoom
+
+[04] As estatuetas de ouro, prata e concha...
+documento: imagens/doc-r12.png
+efeito: zoom
++ lhamas
+documento: imagens/doc-r13.png
+efeito: zoom
+
+[05] Elas não iam morrer como castigo. Iam como presente.
+texto: Elas não iam morrer como castigo. Iam como *presente*.
+
+[06] Para os incas, as montanhas eram deuses...
+documento: imagens/doc-r04.png
+efeito: zoom
++ E não existia
+documento: imagens/doc-r05.png
+efeito: zoom

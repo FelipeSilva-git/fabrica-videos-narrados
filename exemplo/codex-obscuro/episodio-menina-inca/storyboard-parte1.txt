@@ -1,0 +1,80 @@
+# STORYBOARD — MENINA INCA — PARTE 1
+
+[01] Ela parece que só pegou no sono...
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[02] Ela foi encontrada no topo de um vulcão...
+documento: imagens/doc-r06.png
+efeito: zoom
++ onde quase nada vive
+documento: imagens/doc-r08.png
+efeito: zoom
+
+[03] Ela foi preparada durante um ano inteiro.
+transicao: corte
+texto: Ela foi preparada durante *um ano inteiro*.
+
+[04] Quem contou isso não foi um livro...
+documento: imagens/doc-r11.png
+efeito: zoom
++ Foi o cabelo dela
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[05] você vai ver a expedição...
+documento: imagens/doc-r02.png
+efeito: zoom
++ o relato de uma menina
+imagem: imagens/ia-02-tanta-carhua.png
+efeito: zoom
++ cada centímetro
+documento: imagens/doc-r11.png
+efeito: deslizar
++ um império inteiro
+documento: imagens/doc-r22.png
+efeito: zoom
+
+[06] Março de mil novecentos e noventa e nove...
+video: videos/anim-inca-cap1.mp4
+transicao: flash
++ Fronteira
+documento: imagens/doc-r04.png
+efeito: zoom
+
+[07] Uma equipe liderada pelo arqueólogo Johan Reinhard...
+documento: imagens/doc-r02.png
+efeito: zoom
++ Constanza Ceruti
+documento: imagens/doc-r15.png
+efeito: zoom
++ Vento forte
+documento: imagens/doc-r08.png
+efeito: zoom
+
+[08] Eles estavam quase desistindo...
+video: videos/anim-m01-cavando.mp4
+
+[09] Um metro e meio abaixo, estavam três crianças.
+manter
+
+[10] Um menino de uns cinco anos...
+documento: imagens/doc-r16.png
+efeito: zoom
++ E uma adolescente
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[11] Os pesquisadores a chamaram de La Doncella...
+manter
+
+[12] Estavam sentadas, encolhidas...
+documento: imagens/doc-r12.png
+efeito: zoom
++ O frio e o ar seco
+documento: imagens/doc-r01.png
+efeito: zoom
+
+[13] E a menina de seis anos tinha uma marca estranha...
+documento: imagens/doc-r05.png
+efeito: zoom

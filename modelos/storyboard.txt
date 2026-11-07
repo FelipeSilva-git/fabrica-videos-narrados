@@ -1,0 +1,17 @@
+# STORYBOARD — <EPISÓDIO> — PARTE N
+# Gere em branco com: codex_motion.py storyboard --texto narracao.md --parte N --saida storyboard-parteN.txt
+# Comandos: guias/07-edicao-motor.md. Troque o visual a cada 3–5 s (use "+ palavra").
+
+[01] primeira frase...
+documento: imagens/doc-r01.png
+efeito: zoom
++ palavra do meio
+video: videos/anim-01.mp4
+
+[02] frase de impacto...
+transicao: corte
+video: videos/anim-02.mp4
+
+[03] um número forte...
+numero: 6.700 m | altitude
+fonte: Reinhard & Ceruti, 2010

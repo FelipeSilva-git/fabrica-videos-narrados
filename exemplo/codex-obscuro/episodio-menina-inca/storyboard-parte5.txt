@@ -1,0 +1,36 @@
+# STORYBOARD — MENINA INCA — PARTE 5
+
+[01] Não há sinal de golpe na Donzela...
+video: videos/anim-inca-cap5.mp4
+transicao: corte
++ A explicação
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[02] Entorpecida pela coca e pela chicha...
+video: videos/anim-m05-camara.mp4
+
+[03] O menino talvez não tenha tido a mesma sorte...
+documento: imagens/doc-r01.png
+efeito: zoom
+
+[04] Os crânios também contam uma coisa...
+documento: imagens/doc-r16.png
+efeito: zoom
++ A Donzela não
+documento: imagens/doc-r10.png
+efeito: deslizar
+
+[05] Em mil novecentos e cinquenta e quatro, no Chile...
+transicao: zoom
+documento: imagens/doc-r23.png
+efeito: zoom
++ um menino de uns oito anos
+documento: imagens/doc-r24.png
+efeito: zoom
+
+[06] Em mil novecentos e noventa e cinco, no Peru...
+texto: Ampato, Peru, 1995: *Juanita*.
+
+[07] São dezenas de santuários incas...
+video: videos/anim-m06-santuarios.mp4

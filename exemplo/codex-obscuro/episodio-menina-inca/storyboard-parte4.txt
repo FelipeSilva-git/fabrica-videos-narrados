@@ -1,0 +1,61 @@
+# STORYBOARD — MENINA INCA — PARTE 4
+
+[01] Mas Tanta Carhua é um relato escrito por espanhóis...
+video: videos/anim-inca-cap4.mp4
+transicao: glitch
++ E se pudéssemos
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[02] Foi isso que os cientistas fizeram, com o cabelo dela.
+documento: imagens/doc-r11.png
+efeito: zoom
+
+[03] O cabelo cresce mais ou menos um centímetro por mês...
+video: videos/anim-m04a-regua.mp4
+
+[04] Eles cortaram o fio em pedacinhos...
+manter
+
+[05] Doze meses antes de morrer, a vida dela mudou.
+transicao: flash
+video: videos/anim-m04b-escolhida.mp4
+
+[06] A comida mudou...
+manter
+
+[07] E começou a coca...
+imagem: imagens/ia-04-coca.png
+efeito: zoom
+
+[08] Seis meses antes, alguém cortou o cabelo dela...
+video: videos/anim-m04c-corte.mp4
+
+[09] Depois veio a viagem...
+video: videos/anim-m04d-viagem.mp4
+
+[10] E então, nas últimas seis a oito semanas…
+video: videos/anim-m04e-alcool.mp4
+
+[11] o álcool disparou.
+manter
+
+[12] Chicha, a cerveja de milho...
+manter
++ Os pesquisadores
+documento: imagens/doc-r18.png
+efeito: zoom
+
+[13] Pouco antes de morrer, o cabelo dela foi trançado de novo...
+documento: imagens/doc-r10.png
+efeito: zoom
+fonte: Wilson et al., PNAS 2007 e 2013
+
+[14] Um dos cientistas, Andrew Wilson...
+documento: imagens/doc-r11.png
+efeito: zoom
+
+[15] "Isso não é uma múmia seca..."
+transicao: corte
+texto: "Isso não é uma múmia seca ou um monte de ossos. É uma pessoa. É uma *criança*."
+fonte: Andrew Wilson, Universidade de Bradford

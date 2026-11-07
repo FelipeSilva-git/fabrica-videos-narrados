@@ -1,0 +1,19 @@
+# chaves e segredos — NUNCA versionar
+*api*.txt
+*.key
+.env
+chaves*
+googlestudio*
+
+# mídia e renders (pesados; ficam só no seu PC)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+render/
+quadros/
+episodios/
+**/imagens-reais/*.jpg
+__pycache__/
+*.pyc

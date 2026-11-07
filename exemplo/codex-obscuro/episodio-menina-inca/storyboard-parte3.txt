@@ -1,0 +1,28 @@
+# STORYBOARD — MENINA INCA — PARTE 3
+
+[01] Existe um relato espanhol de mil seiscentos e vinte e um...
+video: videos/anim-inca-cap3.mp4
+transicao: zoom
++ Tanta Carhua
+imagem: imagens/ia-02-tanta-carhua.png
+efeito: zoom
+
+[02] Ela tinha dez anos...
+video: videos/anim-m03-tanta-carhua.mp4
+
+[03] "Podem acabar comigo agora..."
+transicao: corte
+texto: "Podem acabar comigo agora. Nenhuma honra é maior do que as *festas* que fizeram para mim em Cusco."
+fonte: relato de Rodrigo Hernández Príncipe, 1621
+
+[04] Ela foi levada para o alto de uma montanha...
+imagem: imagens/ia-03-poco-de-pedra.png
+efeito: zoom
+
+[05] Os parentes dela passaram a ser respeitados...
+imagem: imagens/ia-02-tanta-carhua.png
+efeito: deslizar
+
+[06] E se você quer ver o lado da história...
+documento: imagens/doc-r08.png
+efeito: zoom

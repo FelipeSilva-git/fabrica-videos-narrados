@@ -1,0 +1,39 @@
+# STORYBOARD — MENINA INCA — PARTE 6
+
+[01] Agora, a parte que quase ninguém conta.
+video: videos/anim-inca-cap6.mp4
+transicao: corte
+
+[02] A capacocha não era só fé. Era política...
+video: videos/anim-m07-imperio.mp4
+
+[03] Era assim que o império amarrava o mundo à capital...
+manter
+
+[04] E o nome do ritual diz o resto...
+texto: Qhapaq hucha: *pecado*, culpa, dívida.
+
+[05] Hoje as três crianças estão num museu em Salta...
+documento: imagens/doc-r21.png
+efeito: zoom
++ num freezer
+documento: imagens/doc-r19.png
+efeito: zoom
++ líderes indígenas
+documento: imagens/doc-r04.png
+efeito: zoom
+
+[06] Ela parece que só pegou no sono.
+transicao: flash
+documento: imagens/doc-r10.png
+efeito: zoom
+
+[07] E talvez fosse exatamente isso que eles queriam...
+manter
+
+[08] Na próxima página do códex...
+titulo: PRÓXIMA PÁGINA | os sacerdotes que vestiam a pele
+
+[09] E você? Para aquela família, era honra ou crueldade?
+documento: imagens/doc-r08.png
+efeito: zoom
