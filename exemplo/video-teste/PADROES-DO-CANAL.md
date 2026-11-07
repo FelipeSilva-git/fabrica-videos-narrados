@@ -1,4 +1,4 @@
-# CÓDEX OBSCURO — Padrões do canal
+# CANAL TESTE — Padrões do canal
 
 Tudo o que já foi aprovado nos vídeos *O Favorzinho* e *Até a luz de antigamente era diferente*.
 Use este arquivo como ponto de partida de cada episódio novo.
@@ -7,8 +7,8 @@ Use este arquivo como ponto de partida de cada episódio novo.
 
 ## 1. Identidade
 
-- **Narrador:** O Velho Contador. Voz masculina, grave, rouca e lenta (ElevenLabs).
-- **Voz (a partir do Staden, nov/2026):** Google AI Studio (Gemini TTS, `gemini-3.8-flash-tts`), voz **Umbriel**, estilo **Empathetic**. Gerar com `codex-motion/google_tts.py` (lê as chaves em `Downloads/googlestudio_api*.txt` e troca de chave quando a cota acaba). O estilo vai separado como "notas do diretor" (`staden/voz/estilo.txt`) e o texto depois de `#### TRANSCRIPT`; senão a voz lê as instruções. Sem tags `<break>`: as pausas vêm dos parágrafos.
+- **Narrador:** O Narrador. Voz masculina, grave, rouca e lenta (ElevenLabs).
+- **Voz (a partir do Staden, nov/2026):** Google AI Studio (Gemini TTS, `gemini-3.8-flash-tts`), voz **Umbriel**, estilo **Empathetic**. Gerar com `motor/google_tts.py` (lê as chaves em `Downloads/googlestudio_api*.txt` e troca de chave quando a cota acaba). O estilo vai separado como "notas do diretor" (`staden/voz/estilo.txt`) e o texto depois de `#### TRANSCRIPT`; senão a voz lê as instruções. Sem tags `<break>`: as pausas vêm dos parágrafos.
 - **Tom:** misterioso e investigativo, falando com "você"/"ouvinte". Frases curtas. Final em aberto, com uma pergunta para o público.
 - **Marca verbal:** "o lado obscuro de…", metáforas de prisão, cela, sombra e luz.
 - **"Sente-se. Hoje eu vou te mostrar o lado obscuro de…":** opcional. Só entra quando encaixa no gancho; não é obrigatório em todo vídeo.
@@ -19,8 +19,8 @@ Use este arquivo como ponto de partida de cada episódio novo.
 ## 2. Estrutura de pastas de um episódio
 
 ```
-codex obscuro/
-  codex-motion/              ← ferramenta (motor, thumbs, música)
+canal-teste/
+  motor/              ← ferramenta (motor, thumbs, música)
   <episodio>/
     roteiro-<ep>.md          ← roteiro + tabela de fontes por linha (no fim)
     elevenlabs-<ep>.md       ← texto do ElevenLabs em "## Parte N", com <break>
@@ -34,7 +34,7 @@ codex obscuro/
 ## 3. Roteiro
 
 - **Estrutura e ritmo:** seguir o `MODELO-DE-VIDEO.md` (frase 1 = título, cena 1 = thumb, gancho completo em 20 s, ciclos de energia, recompensa no final, troca de visual a cada 3 a 5 s). Rodar o checklist dele antes de gravar o áudio.
-- **Storytelling:** antes do roteiro, preencher a **Ficha da história** (personagem, conflito, clímax, resolução, transformação, tema) da seção J do `MODELO-DE-VIDEO.md`. Cada vídeo é uma nova página do códex do Velho Contador.
+- **Storytelling:** antes do roteiro, preencher a **Ficha da história** (personagem, conflito, clímax, resolução, transformação, tema) da seção J do `MODELO-DE-VIDEO.md`. Cada vídeo é uma nova página do arquivo do Narrador.
 - Duração: 7 a 14 minutos. Blocos com título e minutagem, indicação de cena em itálico e notas de produção.
 - **Fontes:** tabela no FIM do arquivo (para não mudar a numeração), com linha · fala · tipo · o que mostrar no print · link.
 - Dados só com fonte aberta e conferida. Percepção de mercado é escrita como "o mercado diz", não como dado.
@@ -79,9 +79,9 @@ Minimalist white line art illustration on a solid pure black background. Clean w
 - Salvar em `videos/clip-NN-nome.mp4`. Se faltar o clipe, entra a imagem parada.
 - A ferramenta mantém a cor original do clipe (ex.: janela acesa em âmbar).
 
-## 6. Motion (codex-motion)
+## 6. Motion (motor)
 
-- **Fundo:** `codex-motion/fundo.jpeg` (hachurado), com movimento lento, vinheta e grão fixo.
+- **Fundo:** `motor/fundo.jpeg` (hachurado), com movimento lento, vinheta e grão fixo.
 - **Fontes:** Cinzel (títulos), Cormorant Garamond (frases), Special Elite (créditos de fonte), Anton (thumbs).
 - **Cor de destaque por episódio** (`--destaque`): `vermelho` = política/tensão (Favorzinho), `ambar` = memória/nostalgia (Até a luz). Também aceita `azul` ou `#RRGGBB`.
 - **Storyboard:** um título de capítulo a cada bloco, frase de impacto curta com *destaque*, contador para todo número (22%, 68%…) com `fonte:`, e imagem com `legenda:` quando citar livro, estudo ou lei.
@@ -112,21 +112,21 @@ nostalgic ambient, warm analog synth pads, soft felt piano, gentle vinyl crackle
 dark minimal ambient, cold sterile synth drones, distant metallic textures, sparse low piano notes, slow tempo 55 bpm, eerie, mysterious, empty modern city at night, cinematic underscore, no drums, no melody hooks, instrumental
 ```
 
-**Mixagem** (`codex-motion/mixar_musica.py`):
+**Mixagem** (`motor/mixar_musica.py`):
 - **Volume da música: -27 dB**, o padrão do script. Resultado medido: voz a -14,7 dB e música a -38 dB nas pausas, uns 23 dB abaixo da voz.
 - Ducking automático: a música abaixa mais quando o narrador fala.
 - Transição de 3 s entre faixas. Faixa curta é emendada nela mesma com fade de 8 s.
 - Volume final -14 LUFS (padrão YouTube).
 - Exemplo:
 ```
-python3 codex-motion/mixar_musica.py --video video_com_voz.mp4 \
+python3 motor/mixar_musica.py --video video_com_voz.mp4 \
   --trilha "ep/faixa 1.mp3:0:126" --trilha "ep/faixa 2.mp3:126:330" --trilha "ep/faixa 1.mp3:330:fim:55" \
   --saida final.mp4
 ```
 
 
 ### Trilha própria (gerada em código) — usada a partir de "Paralisia do sono"
-- O Claude sintetiza a música no código (`codex-motion/trilha_paralisia.py` é o modelo): grave contínuo, pads de acordes, caixinha de música, pulsos, coração, impactos e silêncios **sincronizados com os momentos do roteiro**. Sem direitos autorais.
+- O Claude sintetiza a música no código (`motor/trilha_paralisia.py` é o modelo): grave contínuo, pads de acordes, caixinha de música, pulsos, coração, impactos e silêncios **sincronizados com os momentos do roteiro**. Sem direitos autorais.
 - Mapa de tensão por bloco: começa baixa, impactos nas frases-chave, pico antes da revelação, 1 s de silêncio total depois do pico, e resolução calma (acorde maior) no fechamento.
 - **Como a trilha conversa com o vídeo** (referência: análise do vídeo da Amazônia profunda):
   - **Cama de som do tema:** além da música, um som "do mundo" do episódio (relógio e respiração na Paralisia, vento e areia num vídeo bíblico, cigarras numa floresta).
@@ -136,10 +136,10 @@ python3 codex-motion/mixar_musica.py --video video_com_voz.mp4 \
   - O gerador da trilha lê os tempos das transições (`*.transicoes.json`) e das falas (alinhamento) e posiciona subidas, drops e silêncios sozinho.
 - **Mixagem padrão (aprovada em 19/out, "teste C"): `--voz-tv --volume -14 --teto-trilha -21 --ducking 2.5 --lufs -13`** (ajustado no mesmo dia: trilha 3 dB mais baixa e com teto de pico, para nenhum impacto passar a voz). A voz passa por equalização (menos grave sobrando, mais 3 kHz) e compressão leve, para ser entendida na TV (46% do tempo do faraó foi na TV). A trilha fica mais alta e quase não abaixa debaixo da voz. O -27 continua valendo só para músicas do Suno.
 - **A trilha é contínua do começo ao fim** (cama de acordes + arpejo de oud + percussão + melodia), mudando a cada bloco do roteiro. Silêncio só nos buracos de 1 a 2 s depois das frases de impacto.
-- **Toda animação tem efeitos sonoros** (fogo, moedas, multidão, vento, passos, páginas…) num arquivo próprio (`fx-*.wav`), gerado pelo `codex-motion/sfx_lib.py` e misturado com a voz a 0 dB, com teto de pico (nenhum efeito passa a voz). As animações são feitas já sabendo em que segundo cada som acontece.
+- **Toda animação tem efeitos sonoros** (fogo, moedas, multidão, vento, passos, páginas…) num arquivo próprio (`fx-*.wav`), gerado pelo `motor/sfx_lib.py` e misturado com a voz a 0 dB, com teto de pico (nenhum efeito passa a voz). As animações são feitas já sabendo em que segundo cada som acontece.
 
 ### Curta animado de abertura (opcional)
-- Abertura de 30 a 40 s, sem narração, animada em código no estilo "palito" com traço branco (`codex-motion/curta_paralisia.py` é o modelo), com sons sintetizados. A primeira cena mostra o que a thumb promete.
+- Abertura de 30 a 40 s, sem narração, animada em código no estilo "palito" com traço branco (`motor/curta_paralisia.py` é o modelo), com sons sintetizados. A primeira cena mostra o que a thumb promete.
 
 ## 8. Thumbnail
 
@@ -152,7 +152,7 @@ python3 codex-motion/mixar_musica.py --video video_com_voz.mp4 \
 ## 9. Publicação
 
 - **Título:** em maiúsculas, **até 50 caracteres**, curto e forte, que complete a thumb em vez de repetir.
-- **Descrição:** gancho de 2 linhas, resumo, capítulos (tempos tirados das emendas dos áudios), fontes e 3 hashtags (tema em alta, tema do vídeo, #CódexObscuro).
+- **Descrição:** gancho de 2 linhas, resumo, capítulos (tempos tirados das emendas dos áudios), fontes e 3 hashtags (tema em alta, tema do vídeo, #CanalTeste).
 - **Tags:** termos do Google Trends (buscas em ascensão) + termos explicativos ("o que é…").
 - **Horário:** de manhã (8h–10h), subindo o arquivo na noite anterior para o HD processar. Comentário fixado com uma pergunta.
 

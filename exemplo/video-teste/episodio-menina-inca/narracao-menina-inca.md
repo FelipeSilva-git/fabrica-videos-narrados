@@ -58,7 +58,7 @@ Ela foi levada para o alto de uma montanha, colocada num poço de pedra… e fec
 
 Os parentes dela passaram a ser respeitados por gerações. O pai ganhou um cargo. E ela virou uma espécie de santa do lugar. <break time="1.0s" />
 
-E se você quer ver o lado da história que fica escondido, se inscreva. A próxima página do códex é sobre sacerdotes que vestiam a pele dos mortos, e você pode perder se não estiver inscrito.
+E se você quer ver o lado da história que fica escondido, se inscreva. A próxima página do arquivo é sobre sacerdotes que vestiam a pele dos mortos, e você pode perder se não estiver inscrito.
 
 ---
 
@@ -130,7 +130,7 @@ Ela parece que só pegou no sono. <break time="1.0s" />
 
 E talvez fosse exatamente isso que eles queriam: que ela dormisse… e não acordasse nunca mais. <break time="1.0s" />
 
-Na próxima página do códex: os sacerdotes astecas que, durante vinte dias, andavam pela cidade vestidos com a pele de outros homens. <break time="1.0s" />
+Na próxima página do arquivo: os sacerdotes astecas que, durante vinte dias, andavam pela cidade vestidos com a pele de outros homens. <break time="1.0s" />
 
 E você? Para aquela família, era honra ou crueldade? Comenta aqui.
 

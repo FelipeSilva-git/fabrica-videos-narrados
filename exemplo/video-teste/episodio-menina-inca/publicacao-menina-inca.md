@@ -14,7 +14,7 @@ No topo de um vulcão a 6.700 metros, arqueólogos encontraram três crianças i
 
 Neste vídeo você vê as fotos reais da descoberta de 1999, entende o ritual da capacocha, ouve o relato de 1621 de uma menina que "pediu para morrer", e descobre o que a ciência leu em cada centímetro desse cabelo.
 
-📖 Inscreva-se: a próxima página do códex é sobre os sacerdotes astecas que vestiam a pele dos mortos.
+📖 Inscreva-se: a próxima página do arquivo é sobre os sacerdotes astecas que vestiam a pele dos mortos.
 
 **Capítulos**
 0:00 Ela parece que só pegou no sono
@@ -66,7 +66,7 @@ Narração com voz sintética. Imagens ilustrativas geradas com IA nas cenas sem
 #Incas #Múmia #HistóriaReal
 
 ## Tags
-múmia inca, menina inca, llullaillaco, la doncella, capacocha, sacrifício inca, crianças incas, múmias congeladas, arqueologia, incas, império inca, andes, juanita múmia, tanta carhua, história obscura, lado obscuro da história, rituais antigos, códex obscuro
+múmia inca, menina inca, llullaillaco, la doncella, capacocha, sacrifício inca, crianças incas, múmias congeladas, arqueologia, incas, império inca, andes, juanita múmia, tanta carhua, história obscura, lado obscuro da história, rituais antigos, arquivo obscuro
 
 ## Comentário fixado
 Para a família dela, ser escolhida era a maior honra que existia. Para nós, é difícil de entender. Honra ou crueldade? Comenta aqui.

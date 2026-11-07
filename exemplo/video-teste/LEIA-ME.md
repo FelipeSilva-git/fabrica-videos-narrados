@@ -1,6 +1,6 @@
-# Exemplo: Códex Obscuro
+# Exemplo: vídeo teste
 
-Um canal real que usa este kit: histórias e culturas antigas pelo lado obscuro, sempre com prova.
+Um canal de teste (nome fictício "Canal Teste") que usa este kit: histórias e culturas antigas pelo lado obscuro, sempre com prova.
 
 - `PERFIL-DO-CANAL.md` — o perfil preenchido (use como referência de detalhe).
 - `REGISTRO-DE-VIDEOS.md` — 8 vídeos com números reais e as lições que viraram regra.

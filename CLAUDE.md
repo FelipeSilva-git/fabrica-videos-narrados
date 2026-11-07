@@ -2,14 +2,28 @@
 
 Você está num kit para produzir vídeos narrados de YouTube. O método está em `guias/`, as ferramentas em `motor/`, e **tudo o que é específico do canal está em `canal/`**. Leia isto inteiro antes de começar.
 
-## 0. Primeiro contato: o perfil do canal
+## 0. Antes de começar: avise o que é preciso liberar
+
+Na primeira conversa, **antes de qualquer etapa**, diga à pessoa o que o kit precisa e confira se já está liberado. Sem isso, a pesquisa, as imagens reais e a voz falham no meio do caminho.
+
+1. **Acesso à rede para todos os domínios.** A busca de imagens (Wikimedia Commons, museus), a voz (Google/ElevenLabs) e a pesquisa de fontes acessam sites de fora. Peça para a pessoa liberar em **claude.ai → Configurações → Capacidades → acesso à rede: "Todos os domínios"** (em conta Team/Enterprise, quem libera é o administrador). Se um download for recusado pelo ambiente, não tente outro caminho: avise e peça a liberação.
+2. **Acesso ao navegador interno** (o navegador do app do Claude, no computador). Serve para abrir páginas que bloqueiam acesso automático, ler o YouTube Studio, baixar o que o gerador de imagens produziu e conferir a página das licenças. Peça para a pessoa abrir o app Claude no computador, vincular a conversa a ele e aprovar o acesso ao navegador quando o pedido aparecer.
+3. **Uma chave de API de voz** (a pessoa cria; você nunca cria nem vê a conta dela):
+   - **Google AI Studio (Gemini TTS), recomendado:** aistudio.google.com → **Get API key** → **Create API key**. Tem cota gratuita diária; se houver mais de uma chave, o script passa para a próxima quando a cota de uma acaba. Guardar num arquivo **fora do repositório** e definir `GEMINI_KEYS_FILE=<caminho>` (aceita `*`) ou `GEMINI_API_KEYS=chave1,chave2`. Script: `motor/google_tts.py`.
+   - **ElevenLabs (alternativa, paga para uso comercial):** elevenlabs.io → **Profile → API Keys** → criar chave; escolher a voz na Voice Library e anotar o `voice_id`. Definir `ELEVENLABS_API_KEY=<chave>`. Script: `motor/elevenlabs_tts.py`.
+   - Peça que a pessoa **cole a chave num arquivo ou variável de ambiente, não no chat**. Se ela colar no chat mesmo assim, use, não repita o valor em nenhuma resposta e sugira gerar outra depois.
+4. **Programas no computador** (se for renderizar lá): Python 3.10+, `ffmpeg`, e `pip install numpy pillow opencv-python-headless pycairo scipy`.
+
+Deixe isso numa lista curta, com o que já está ok e o que falta, e siga para o perfil.
+
+## 1. O perfil do canal
 
 Abra `canal/PERFIL-DO-CANAL.md`.
-- **Se ainda estiver com os campos `___`:** não produza nada. Entreviste a pessoa (no máximo 4 perguntas por vez) e preencha o perfil: nicho, público, narrador, tom, linhas editoriais, estilo visual, cores/fontes, voz, proibições. Use `exemplo/codex-obscuro/PERFIL-DO-CANAL.md` como referência de nível de detalhe. Ofereça valores padrão quando a pessoa não souber.
+- **Se ainda estiver com os campos `___`:** não produza nada. Entreviste a pessoa (no máximo 4 perguntas por vez) e preencha o perfil: nicho, público, narrador, tom, linhas editoriais, estilo visual, cores/fontes, voz, proibições. Use `exemplo/video-teste/PERFIL-DO-CANAL.md` como referência de nível de detalhe. Ofereça valores padrão quando a pessoa não souber.
 - **Se já estiver preenchido:** ele manda. Quando um guia e o perfil discordarem, vale o perfil (o guia é o padrão; o perfil é a escolha do canal).
 - Leia também `canal/REGISTRO-DE-VIDEOS.md`: as lições dos vídeos anteriores valem mais que qualquer regra geral.
 
-## 1. O pipeline (com portões)
+## 2. O pipeline (com portões)
 
 Cada etapa só começa depois que a anterior foi aprovada pela pessoa nos pontos marcados com 🔒.
 
@@ -28,7 +42,7 @@ Cada etapa só começa depois que a anterior foi aprovada pela pessoa nos pontos
 
 Trabalho que dá para refazer barato (ex.: um storyboard) não precisa de portão: faça e mostre.
 
-## 2. Regras que não se negociam
+## 3. Regras que não se negociam
 
 1. **Embalagem antes do roteiro.** Se não sair um título e uma thumb fortes, a ideia não é produzida.
 2. **Tudo que é afirmado como fato tem fonte.** Tabela de fontes no fim do roteiro. Número de "esforço" ("reuni 9 textos") é sempre verdadeiro.
@@ -39,7 +53,7 @@ Trabalho que dá para refazer barato (ex.: um storyboard) não precisa de portã
 7. **Pessoas reais e povos reais com respeito:** o lado chocante de uma história é contado com prova e contexto, sem desumanizar ninguém e sem gore gratuito.
 8. **Uma melhoria por vídeo**, anotada no registro.
 
-## 3. Onde as coisas ficam (um episódio)
+## 4. Onde as coisas ficam (um episódio)
 
 ```
 episodios/<slug>/
@@ -50,9 +64,9 @@ episodios/<slug>/
   thumb/   publicacao-<slug>.md
 ```
 
-## 4. Como trabalhar
+## 5. Como trabalhar
 
 - Mostre rascunhos cedo (amostra de voz, 3 quadros do storyboard, esboço da thumb).
-- Confira o próprio trabalho: ouça a duração da voz (≈0,29–0,37 s por palavra; muito acima = leu algo a mais), gere quadros de QA (`codex_motion.py quadros`), meça o LUFS final.
+- Confira o próprio trabalho: ouça a duração da voz (≈0,29–0,37 s por palavra; muito acima = leu algo a mais), gere quadros de QA (`motion.py quadros`), meça o LUFS final.
 - Leia `guias/11-armadilhas-tecnicas.md` antes de rodar renders longos.
 - Ao terminar, peça os números do vídeo depois de 48 h e 7 dias.

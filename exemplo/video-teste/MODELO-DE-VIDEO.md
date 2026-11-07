@@ -1,4 +1,4 @@
-# CÓDEX OBSCURO — Modelo de vídeo
+# CANAL TESTE — Modelo de vídeo
 
 Baseado no que o MrBeast ensina sobre ideia, título, thumb, gancho e retenção (meta: **70% de retenção**), adaptado para vídeo **narrado com motion** e para um canal pequeno que quer crescer também fora do Brasil.
 Use junto com o `PADROES-DO-CANAL.md`. Este arquivo diz **o que fazer e em que ordem**; os padrões dizem **o estilo**.
@@ -54,7 +54,7 @@ Ideia nova tem que cair numa dessas duas. Autoajuda e política trazem clique de
 
 ### Os 4 gatilhos do clique (das skills dos outros projetos, nov/2026)
 Gatilho sem entrega é clickbait. Escolher **antes** do roteiro e marcar no roteiro onde a promessa é paga.
-| Gatilho | Sensação | No Códex |
+| Gatilho | Sensação | No Arquivo |
 | --- | --- | --- |
 | **Autoridade** | "essa pessoa sabe" | testemunha ocular, livro antigo, estudo (DNA, cabelo da múmia), com a fonte na tela |
 | **Contradição** | "como assim?" | "não era fome", "a lenda estava errada": coloca uma crença à prova e explica o mecanismo |
@@ -67,7 +67,7 @@ Gatilho sem entrega é clickbait. Escolher **antes** do roteiro e marcar no rote
 - **Plantar e pagar:** um elemento aparece cedo e volta depois com outro sentido (o navio que recusa e o navio que salva).
 - **O jeito ingênuo falhando antes da solução:** cada tentativa do personagem falha até a que funciona.
 - **Uma cena forte por bloco.**
-- **Uma voz só:** as falas dos personagens o Velho Contador lê no tom deles, e elas aparecem escritas na tela.
+- **Uma voz só:** as falas dos personagens o Narrador lê no tom deles, e elas aparecem escritas na tela.
 
 ## C. Primeiros 5 segundos: cumprir a promessa (e vender o clique)
 
@@ -223,7 +223,7 @@ Todo vídeo é uma **história**, não só um tema. Antes de escrever o roteiro,
 | **5. Resolução** | O conflito se fecha; o público não fica sem fechamento | A recompensa que responde a lacuna do gancho (seção G) |
 | **6. Transformação** | O personagem, e quem assiste, sai diferente | No vídeo: algo muda de estado (Enoque some na luz; o livro sai das correntes e vai para o altar). No público: **"depois deste vídeo, você nunca mais vai ver ______ do mesmo jeito"** |
 | **7. Tema** | A grande ideia que liga tudo | Do canal: **"o que foi escondido de você"**. De cada vídeo: uma frase só |
-| **8. Tom e voz** | Tom = jeito de contar; voz = identidade de quem conta | Tom misterioso e investigativo; voz do **Velho Contador** |
+| **8. Tom e voz** | Tom = jeito de contar; voz = identidade de quem conta | Tom misterioso e investigativo; voz do **Narrador** |
 
 ### Ficha da história (preencher antes do roteiro)
 ```
@@ -236,8 +236,8 @@ Tema (1 frase): ______
 Identificação:  o que a maioria do público já viveu ou ouviu sobre isso
 ```
 
-### O arco do Velho Contador (fio da série)
-O narrador também é um personagem com história: ele está montando um **códex** com o que foi apagado. Cada vídeo é **uma página nova** desse códex (Adão → Enoque → nefilins…).
+### O arco do Narrador (fio da série)
+O narrador também é um personagem com história: ele está montando um **arquivo** com o que foi apagado. Cada vídeo é **uma página nova** desse arquivo (Adão → Enoque → nefilins…).
 - Abertura ou fechamento pode mostrar a página sendo acrescentada (ícone, selo ou animação curta).
 - O fechamento sempre aponta a **próxima página** ("e ele é o próximo").
 - Isso dá motivo para assistir o próximo vídeo e para maratonar a playlist.
@@ -320,7 +320,7 @@ Recompensa (responde a lacuna) → imagem forte → pergunta → gancho do próx
 - [ ] A ideia é interessante, original e forte?
 - [ ] Ficha da história preenchida: personagem com motivação, conflito, clímax, resolução, transformação e tema?
 - [ ] O conflito aparece no gancho, e o público sai com a frase "você nunca mais vai ver ______ do mesmo jeito"?
-- [ ] O fechamento acrescenta uma página ao códex e aponta a próxima?
+- [ ] O fechamento acrescenta uma página ao arquivo e aponta a próxima?
 - [ ] A introdução liga o tema a algo que a maioria do público já viveu ou ouviu?
 - [ ] Os 5 passos estão lá (gancho, contexto, tensão, progressão, transformação) e nenhum bloco é só "sequência de fatos"?
 - [ ] O final volta à imagem ou à frase da abertura (fechamento circular)?

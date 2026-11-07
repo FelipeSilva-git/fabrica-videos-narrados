@@ -10,6 +10,9 @@ description: Produzir um vídeo longo narrado de YouTube (história, documentár
 2. Leia `canal/PERFIL-DO-CANAL.md`. Vazio → entreviste a pessoa e preencha antes de produzir. Preenchido → ele manda sobre os padrões gerais.
 3. Leia `canal/REGISTRO-DE-VIDEOS.md`: lições anteriores valem como regra.
 
+## Avise primeiro o que precisa estar liberado
+Antes de qualquer etapa, diga à pessoa e confira: (1) **acesso à rede para todos os domínios** (Configurações → Capacidades), para fontes, imagens com licença e voz; (2) **acesso ao navegador interno** do app Claude no computador; (3) uma **chave de API de voz** criada por ela: Google AI Studio/Gemini TTS (aistudio.google.com → Get API key; `GEMINI_KEYS_FILE` ou `GEMINI_API_KEYS`) ou ElevenLabs (Profile → API Keys; `ELEVENLABS_API_KEY`). A chave vai em arquivo ou variável de ambiente, nunca no chat nem no repositório.
+
 ## Pipeline (🔒 = aprovação da pessoa)
 pauta 🔒 → **embalagem antes do roteiro** (entrega, gatilhos, 3 títulos ≤ 50 caracteres, esboço de thumb) 🔒 → ficha da história → roteiro com mapa visual REAL/ANIM/IA e tabela de fontes 🔒 → voz (parte 1 primeiro) 🔒 → imagens reais licenciadas + prompts de IA para a pessoa gerar 🔒 → alinhamento → ritmo → storyboards → animações → render por partes → trilha + fx → mix -13 LUFS → QA de quadros → publicação → registro após 48 h / 7 dias.
 
@@ -20,7 +23,7 @@ pauta 🔒 → **embalagem antes do roteiro** (entrega, gatilhos, 3 títulos ≤
 - **Storytelling:** personagem (quer/impede), conflito no gancho, clímax, resolução, transformação ("você nunca mais vai ver ___ do mesmo jeito"), identificação com o que o público já viveu.
 - **Visual:** troca a cada 3–5 s (sub-cenas `+ palavra`); **animação no lugar de texto**; real primeiro (~60/25/15); transições só com motivo (corte depois de frase de impacto).
 - **Gatilhos de clique:** autoridade, contradição, novidade (escassez quase nunca). Contradição em frase venceu palavra solta no A/B. Thumb de história real usa **foto real**.
-- **Voz Gemini:** estilo como notas do diretor + `#### TRANSCRIPT`; pausas por parágrafo; números por extenso; ≈0,29–0,37 s/palavra.
+- **Voz (Gemini ou ElevenLabs):** Gemini: estilo como notas do diretor + `#### TRANSCRIPT`; pausas por parágrafo; números por extenso; ≈0,29–0,37 s/palavra.
 - **Mix:** voz para TV, trilha contínua com teto, fx com limitador, -13 LUFS.
 - **Licenças de imagem:** só PD, CC0, CC BY, CC BY-SA com crédito (ver skill `imagens-reais-licenciadas`).
 - **Chaves de API:** só por variável de ambiente; nunca exibir nem versionar.

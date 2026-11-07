@@ -1,4 +1,4 @@
-# AUDIO PROFILE: O Velho Contador
+# AUDIO PROFILE: O Narrador
 Narrador masculino de um canal brasileiro de histórias antigas e sombrias.
 
 ## THE SCENE

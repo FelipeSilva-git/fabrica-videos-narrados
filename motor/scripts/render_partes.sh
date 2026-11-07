@@ -5,7 +5,7 @@
 #   Rode 2 cadeias em paralelo em máquinas com 2+ núcleos (ex.: "1 2 3" e "6 5 4").
 set -u
 AQUI="$(cd "$(dirname "$0")/.." && pwd)"
-M="$AQUI/codex_motion.py"
+M="$AQUI/motion.py"
 EP="${EP:?defina EP}"; MD="${MD:?defina MD}"; DESTAQUE="${DESTAQUE:-ambar}"; CHAMADA="${CHAMADA:-}"
 ULT=$(ls "$EP"/*-ritmo.mp3 | wc -l)
 for p in "$@"; do

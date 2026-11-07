@@ -1,11 +1,11 @@
-# Perfil do canal — Códex Obscuro
+# Perfil do canal — Canal Teste
 
 ## 1. Identidade
-- **Nome do canal:** Códex Obscuro
+- **Nome do canal:** Canal Teste
 - **Idioma principal / outros idiomas:** português do Brasil · versões em inglês (thumb, descrição, legenda)
 - **Nicho em uma frase:** histórias e culturas antigas pelo lado feio e obscuro (rituais, sacrifícios, costumes com os mortos), sempre com prova.
 - **Tema do canal:** "o que foi escondido de você".
-- **Promessa para quem se inscreve:** cada vídeo é uma página nova do códex, com a história que os livros de escola pularam — e a prova.
+- **Promessa para quem se inscreve:** cada vídeo é uma página nova do arquivo, com a história que os livros de escola pularam — e a prova.
 
 ## 2. Público
 - **Quem assiste:** homens e mulheres de 25 a 54, Brasil e Portugal, que gostam de mistério, terror real, Bíblia oculta, arqueologia.
@@ -13,8 +13,8 @@
 - **Onde assiste:** celular e **TV** (até 46% do tempo) → voz equalizada para TV.
 
 ## 3. Narrador
-- **Quem conta:** O Velho Contador.
-- **Arco:** ele está montando um códex com o que foi apagado; cada vídeo é uma página, e o fechamento aponta a próxima.
+- **Quem conta:** O Narrador.
+- **Arco:** ele está montando um arquivo com o que foi apagado; cada vídeo é uma página, e o fechamento aponta a próxima.
 - **Tom:** misterioso, investigativo, empático com as vítimas. Frases curtas.
 - **Fala com:** "você", "ouvinte".
 - **Marcas verbais:** "o lado obscuro de…", prisão/cela/sombra/luz.
@@ -54,7 +54,7 @@ Minimalist white line art illustration on a solid pure black background. Clean w
 ## 8. Formato
 - **Duração:** 9–11 min · **6 partes de voz** · 1 vídeo por semana
 - **Chamada:** ~2:00 e antes da reflexão final, ligada ao próximo vídeo
-- **Fechamento:** volta à imagem da abertura + pergunta + próxima página do códex
+- **Fechamento:** volta à imagem da abertura + pergunta + próxima página do arquivo
 - **Short-isca:** sim
 
 ## 9. Regras e proibições

@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """
-CODEX MOTION — motor de motion graphics do canal Codex Obscuro.
+MOTOR DE MOTION — motor de motion graphics do canal Canal Teste.
 
 Pega o áudio do ElevenLabs + o texto usado para gerar o áudio + um storyboard
 e monta o vídeo: fundo hachurado em movimento lento, imagens line-art entrando
 no momento da fala, frases de impacto, contadores e cartões de título.
 
 Comandos:
-  python3 codex_motion.py storyboard  --texto elevenlabs.md --parte 1 --saida storyboard-parte1.txt
-  python3 codex_motion.py render      --audio 1.mp3 --texto elevenlabs.md --parte 1 \
+  python3 motion.py storyboard  --texto elevenlabs.md --parte 1 --saida storyboard-parte1.txt
+  python3 motion.py render      --audio 1.mp3 --texto elevenlabs.md --parte 1 \
                                       --storyboard storyboard-parte1.txt --imagens pasta_imagens \
                                       --saida parte1.mp4 [--res 720] [--de 0 --ate 30]
-  python3 codex_motion.py quadros     (mesmos argumentos do render) --tempos 3,10,25 --saida pasta_png
-  python3 codex_motion.py juntar      --videos p1.mp4 p2.mp4 --audio 1.mp3 --saida final.mp4
+  python3 motion.py quadros     (mesmos argumentos do render) --tempos 3,10,25 --saida pasta_png
+  python3 motion.py juntar      --videos p1.mp4 p2.mp4 --audio 1.mp3 --saida final.mp4
 """
 import argparse, json, math, os, re, subprocess, sys, hashlib
 import numpy as np
@@ -821,7 +821,7 @@ def cmd_quadros(a):
 def cmd_juntar(a):
     """Junta pedaços de vídeo (sem áudio) e coloca o áudio inteiro por cima."""
     import tempfile
-    lista = os.path.join(tempfile.gettempdir(), 'codex_motion_lista.txt')
+    lista = os.path.join(tempfile.gettempdir(), 'motion_lista.txt')
     with open(lista, 'w', encoding='utf-8') as f:
         for v in a.videos:
             f.write("file '" + os.path.abspath(v).replace("'", "'\\''") + "'\n")
@@ -848,7 +848,7 @@ def cmd_storyboard(a):
     print('Storyboard criado:', a.saida)
 
 def main():
-    ap = argparse.ArgumentParser(description='Codex Motion')
+    ap = argparse.ArgumentParser(description='Motor de Motion')
     sub = ap.add_subparsers(dest='cmd', required=True)
     s = sub.add_parser('storyboard')
     s.add_argument('--texto', required=True); s.add_argument('--parte', type=int)

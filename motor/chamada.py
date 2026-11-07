@@ -1,4 +1,4 @@
-"""Chamada animada de LIKE + INSCREVA-SE no estilo do Códex Obscuro (canto inferior direito)."""
+"""Chamada animada de LIKE + INSCREVA-SE no estilo do Canal Teste (canto inferior direito)."""
 import math, os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter

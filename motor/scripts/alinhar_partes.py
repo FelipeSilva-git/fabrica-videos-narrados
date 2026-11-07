@@ -7,7 +7,7 @@ Saída: <pasta>/N[sufixo].alinhamento.json, e uma lista dos trechos com os tempo
 """
 import sys, os, json, hashlib, glob
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-from codex_motion import texto_da_parte
+from motion import texto_da_parte
 from alinhar import alinhar
 
 pasta, md = sys.argv[1], sys.argv[2]

@@ -1,6 +1,6 @@
 # 07 · Edição: o motor
 
-O motor (`motor/codex_motion.py`) transforma **áudio + texto + storyboard** em vídeo 1080p/30 fps com fundo animado, imagens, animações, números, transições e chamadas.
+O motor (`motor/motion.py`) transforma **áudio + texto + storyboard** em vídeo 1080p/30 fps com fundo animado, imagens, animações, números, transições e chamadas.
 
 ## Ordem
 ```bash
@@ -10,9 +10,9 @@ python3 motor/scripts/alinhar_partes.py $EP $MD                 # 1. onde cada t
 python3 motor/scripts/ritmo.py $EP $EP/plano.json               # 3. N-ritmo.mp3
 python3 motor/scripts/alinhar_partes.py $EP $MD -ritmo          # 4. realinha
 python3 motor/scripts/linha_do_tempo.py $EP                     # 5. tempos.json (offsets das partes)
-python3 motor/codex_motion.py storyboard --texto $MD --parte 1 --saida $EP/storyboard-parte1.txt   # 6. em branco
+python3 motor/motion.py storyboard --texto $MD --parte 1 --saida $EP/storyboard-parte1.txt   # 6. em branco
 # 7. preencha os storyboards; faça as animações (abaixo); confira quadros:
-python3 motor/codex_motion.py quadros --audio $EP/1-ritmo.mp3 --texto $MD --parte 1 --storyboard $EP/storyboard-parte1.txt --imagens $EP --tempos 2,10,25 --saida $EP/quadros
+python3 motor/motion.py quadros --audio $EP/1-ritmo.mp3 --texto $MD --parte 1 --storyboard $EP/storyboard-parte1.txt --imagens $EP --tempos 2,10,25 --saida $EP/quadros
 EP=$EP MD=$MD DESTAQUE=ambar CHAMADA="2:40" motor/scripts/render_partes.sh 1 2 3 4 5 6   # 8. render
 ```
 

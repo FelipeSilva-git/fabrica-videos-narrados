@@ -1,4 +1,4 @@
-# Registro de vídeos — Códex Obscuro
+# Registro de vídeos — Canal Teste
 
 
 | Vídeo | Retenção média | Aos 30 s | Com legenda / dublado | Pontos de queda (tempo → motivo) | Melhoria testada | O que mudar no próximo |

@@ -1,5 +1,5 @@
 # STORYBOARD — <EPISÓDIO> — PARTE N
-# Gere em branco com: codex_motion.py storyboard --texto narracao.md --parte N --saida storyboard-parteN.txt
+# Gere em branco com: motion.py storyboard --texto narracao.md --parte N --saida storyboard-parteN.txt
 # Comandos: guias/07-edicao-motor.md. Troque o visual a cada 3–5 s (use "+ palavra").
 
 [01] primeira frase...

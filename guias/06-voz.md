@@ -1,4 +1,4 @@
-# 06 · Voz (Gemini TTS)
+# 06 · Voz (Gemini TTS ou ElevenLabs)
 
 Narração gerada com o **Google AI Studio (Gemini TTS)** por `motor/google_tts.py`. Voz e estilo de cada canal ficam no perfil.
 
@@ -36,7 +36,7 @@ Sotaque: português do Brasil natural.
 Ritmo: calmo e pausado. Pausa curta entre frases, longa entre parágrafos.
 Leia somente o texto da transcrição.
 ```
-Exemplo real: `exemplo/codex-obscuro/episodio-menina-inca/voz/estilo.txt`.
+Exemplo real: `exemplo/video-teste/episodio-menina-inca/voz/estilo.txt`.
 
 ## Preparar o texto (voz/parteN.txt)
 - **Partes de 1,5 a 2 minutos** (6 a 8 por vídeo de 10 min). Parte curta = refazer barato.
@@ -49,3 +49,13 @@ Exemplo real: `exemplo/codex-obscuro/episodio-menina-inca/voz/estilo.txt`.
 - **Duração por palavra ≈ 0,29–0,37 s.** Muito acima disso: leu algo a mais (instrução, título). Muito abaixo: pulou trecho.
 - Ouça o começo e o fim de cada parte.
 - Gere **a parte 1 primeiro** e mostre para aprovação antes do resto.
+
+## Alternativa: ElevenLabs
+```bash
+export ELEVENLABS_API_KEY=...            # elevenlabs.io > Profile > API Keys
+python3 motor/elevenlabs_tts.py --listar
+python3 motor/elevenlabs_tts.py voz/parte1.txt 1.mp3 --voz <voice_id>
+```
+- Aqui as pausas **podem** ir no texto com `<break time="1.0s" />` (1,5 s depois de frase de impacto, 2–3 s antes de virada).
+- Não há "notas do diretor": o estilo vem da voz escolhida e de `--estabilidade` (mais baixo = mais expressivo).
+- Partes de até ~4.500 caracteres. Uso comercial exige plano pago.

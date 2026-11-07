@@ -1,7 +1,7 @@
 # Perfil do canal
 
 > O único arquivo que muda de canal para canal. O Claude preenche com você na primeira conversa.
-> Exemplo completo: `exemplo/codex-obscuro/PERFIL-DO-CANAL.md`.
+> Exemplo completo: `exemplo/video-teste/PERFIL-DO-CANAL.md`.
 
 ## 1. Identidade
 - **Nome do canal:** ___

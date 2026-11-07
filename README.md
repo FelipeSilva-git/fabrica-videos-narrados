@@ -2,14 +2,14 @@
 
 Um kit para produzir **vídeos longos de YouTube narrados** (documentário, história, mistério, ciência, curiosidades) com **Claude**: da ideia ao vídeo final masterizado, com roteiro, voz, imagens reais com licença, animações em código, trilha própria e textos de publicação.
 
-Ele nasceu no canal **Códex Obscuro** (histórias antigas pelo lado obscuro) e foi separado em duas camadas para servir a **qualquer canal**:
+Ele nasceu num canal real de histórias antigas e foi separado em duas camadas para servir a **qualquer canal**:
 
 | Camada | O que é | Muda de canal para canal? |
 | --- | --- | --- |
 | `guias/` + `motor/` | Método (embalagem, storytelling, roteiro, ritmo, som) e ferramentas | Não |
 | `canal/` | Perfil do canal: nicho, público, narrador, tom, cores, fontes, voz, proibições, registro de resultados | **Sim**: é o único lugar que precisa ser preenchido |
 
-`exemplo/codex-obscuro/` mostra um canal real preenchido e um episódio completo.
+`exemplo/video-teste/` mostra um canal de teste preenchido e um episódio completo.
 
 ## Como usar com o Claude
 
@@ -30,12 +30,16 @@ ideia → EMBALAGEM (título + thumb antes de tudo) → ficha da história → r
 
 Cada etapa tem um guia em `guias/` e um modelo em `modelos/`.
 
-## Requisitos
+## Requisitos (o Claude avisa e confere na primeira conversa)
 
-- Python 3.10+, `ffmpeg` no PATH
-- `pip install numpy pillow opencv-python-headless pycairo`
-- Voz: chave do Google AI Studio (Gemini TTS) em `GEMINI_API_KEYS` (vírgulas) ou num arquivo apontado por `GEMINI_KEYS_FILE`. **Nunca coloque chaves no repositório** (o `.gitignore` já bloqueia os nomes comuns).
-- Imagens de IA: qualquer gerador (Flow, Midjourney…) gerado por você; o kit dá os prompts.
+- **Acesso à rede para todos os domínios** no Claude (Configurações → Capacidades), para pesquisar fontes, baixar imagens com licença livre e gerar a voz.
+- **Acesso ao navegador interno** do app Claude no computador, para páginas que bloqueiam acesso automático, YouTube Studio e downloads.
+- **Chave de API de voz**, criada por você:
+  - **Google AI Studio / Gemini TTS** (recomendado, tem cota gratuita): aistudio.google.com → Get API key. Use `GEMINI_KEYS_FILE` (aceita `*`) ou `GEMINI_API_KEYS`.
+  - **ElevenLabs** (alternativa): elevenlabs.io → Profile → API Keys. Use `ELEVENLABS_API_KEY`.
+  - **Nunca coloque chaves no repositório** (o `.gitignore` já bloqueia os nomes comuns).
+- Python 3.10+, `ffmpeg` no PATH, `pip install numpy pillow opencv-python-headless pycairo scipy`.
+- Imagens de IA: qualquer gerador (Flow, Midjourney…), gerado por você; o kit dá os prompts.
 
 ## Estrutura
 
@@ -46,7 +50,7 @@ guias/01..11              ← o método, etapa por etapa
 modelos/                  ← modelos em branco (roteiro, storyboard, narração, publicação...)
 motor/                    ← código: motor de motion, voz, alinhamento, mix, sons, trilha, animações
 skills/                   ← skills prontas para o Claude
-exemplo/codex-obscuro/    ← um canal real preenchido + episódio completo
+exemplo/video-teste/    ← um canal de teste preenchido + episódio completo
 ```
 
 ## Licença

@@ -1,6 +1,6 @@
-# O CÓDEX OBSCURO
+# CANAL TESTE
 ## "A menina que dormiu por 500 anos": roteiro (Llullaillaco / capacocha)
-**Duração alvo:** ~10:00 | **Narrador:** O Velho Contador (Google, Umbriel) | **Linha:** culturas antigas, o lado obscuro | **Formato novo:** REAL primeiro
+**Duração alvo:** ~10:00 | **Narrador:** O Narrador (Google, Umbriel) | **Linha:** culturas antigas, o lado obscuro | **Formato novo:** REAL primeiro
 
 ---
 
@@ -131,7 +131,7 @@ Ela foi levada para o alto de uma montanha, colocada num poço de pedra… e fec
 
 Os parentes dela passaram a ser respeitados por gerações. O pai ganhou um cargo. E ela virou uma espécie de santa do lugar.
 
-**[CTA falado]** E se você quer ver o lado da história que fica escondido, se inscreva. A próxima página do códex é sobre sacerdotes que vestiam a pele dos mortos, e você pode perder se não estiver inscrito.
+**[CTA falado]** E se você quer ver o lado da história que fica escondido, se inscreva. A próxima página do arquivo é sobre sacerdotes que vestiam a pele dos mortos, e você pode perder se não estiver inscrito.
 
 ---
 
@@ -220,7 +220,7 @@ Ela parece que só pegou no sono.
 
 ‖ E talvez fosse exatamente isso que eles queriam: que ela dormisse… e não acordasse nunca mais. ‖
 
-**Próxima página do códex:** os sacerdotes astecas que, durante vinte dias, andavam pela cidade vestidos com a pele de outros homens.
+**Próxima página do arquivo:** os sacerdotes astecas que, durante vinte dias, andavam pela cidade vestidos com a pele de outros homens.
 
 E você? Para aquela família, era honra ou crueldade? Comenta aqui.
 

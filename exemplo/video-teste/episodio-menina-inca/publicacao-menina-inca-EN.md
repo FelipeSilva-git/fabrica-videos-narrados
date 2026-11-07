@@ -15,7 +15,7 @@ On top of a volcano, 6,700 meters high, archaeologists found three Inca children
 
 In this video you will see the real photos of the 1999 discovery, understand the capacocha ritual, hear a 1621 account of a girl who "asked to die," and find out what science read in every centimeter of that hair.
 
-📖 Subscribe: the next page of the codex is about the Aztec priests who wore the skin of the dead.
+📖 Subscribe: the next page of the archive is about the Aztec priests who wore the skin of the dead.
 
 **Chapters**
 0:00 She looks like she's sleeping
