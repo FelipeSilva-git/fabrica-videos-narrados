@@ -7,7 +7,7 @@ Você está num kit para produzir vídeos narrados de YouTube. O método está e
 Na primeira conversa, **antes de qualquer etapa**, diga à pessoa o que o kit precisa e confira se já está liberado. Sem isso, a pesquisa, as imagens reais e a voz falham no meio do caminho.
 
 1. **Acesso à rede para todos os domínios.** A busca de imagens (Wikimedia Commons, museus), a voz (Google/ElevenLabs) e a pesquisa de fontes acessam sites de fora. Peça para a pessoa liberar em **claude.ai → Configurações → Capacidades → acesso à rede: "Todos os domínios"** (em conta Team/Enterprise, quem libera é o administrador). Se um download for recusado pelo ambiente, não tente outro caminho: avise e peça a liberação.
-2. **Acesso ao navegador interno** (o navegador do app do Claude, no computador). Serve para abrir páginas que bloqueiam acesso automático, ler o YouTube Studio, baixar o que o gerador de imagens produziu e conferir a página das licenças. Peça para a pessoa abrir o app Claude no computador, vincular a conversa a ele e aprovar o acesso ao navegador quando o pedido aparecer.
+2. **Acesso ao navegador interno** (o navegador do app do Claude, no computador). É por ele que se faz a pesquisa obrigatória no **Google Trends** (que costuma bloquear acesso automático). Serve também para abrir páginas que bloqueiam acesso automático, ler o YouTube Studio, baixar o que o gerador de imagens produziu e conferir a página das licenças. Peça para a pessoa abrir o app Claude no computador, vincular a conversa a ele e aprovar o acesso ao navegador quando o pedido aparecer.
 3. **Uma chave de API de voz** (a pessoa cria; você nunca cria nem vê a conta dela):
    - **Google AI Studio (Gemini TTS), recomendado:** aistudio.google.com → **Get API key** → **Create API key**. Tem cota gratuita diária; se houver mais de uma chave, o script passa para a próxima quando a cota de uma acaba. Guardar num arquivo **fora do repositório** e definir `GEMINI_KEYS_FILE=<caminho>` (aceita `*`) ou `GEMINI_API_KEYS=chave1,chave2`. Script: `motor/google_tts.py`.
    - **ElevenLabs (alternativa, paga para uso comercial):** elevenlabs.io → **Profile → API Keys** → criar chave; escolher a voz na Voice Library e anotar o `voice_id`. Definir `ELEVENLABS_API_KEY=<chave>`. Script: `motor/elevenlabs_tts.py`.
@@ -29,7 +29,7 @@ Cada etapa só começa depois que a anterior foi aprovada pela pessoa nos pontos
 
 | # | Etapa | Guia | Saída | |
 | --- | --- | --- | --- | --- |
-| 1 | Pauta | `guias/01-ideia-e-pauta.md` | 3 a 5 ideias filtradas | 🔒 escolher |
+| 1 | Pauta | `guias/01-ideia-e-pauta.md` + `skills/pesquisa-google-trends` | **pesquisa no Google Trends (Web + YouTube)** e 3 a 5 ideias apoiadas nela | 🔒 escolher |
 | 2 | Embalagem | `guias/02-embalagem.md` | folha de aplicação: entrega, gatilhos, títulos A/B/C, esboço de thumb | 🔒 aprovar |
 | 3 | Ficha da história | `guias/03-storytelling.md` | ficha preenchida | |
 | 4 | Roteiro | `guias/04-roteiro-e-ritmo.md` + `modelos/roteiro.md` | roteiro com mapa visual (REAL/IA/ANIM) e fontes | 🔒 aprovar |
@@ -44,6 +44,7 @@ Trabalho que dá para refazer barato (ex.: um storyboard) não precisa de portã
 
 ## 3. Regras que não se negociam
 
+1. **Google Trends antes de tudo.** Mesmo quando a pessoa já traz o tema pronto, pesquise o tema no Google Trends (Web e YouTube) e mostre o que está em ascensão antes da embalagem. Nunca invente números do Trends.
 1. **Embalagem antes do roteiro.** Se não sair um título e uma thumb fortes, a ideia não é produzida.
 2. **Tudo que é afirmado como fato tem fonte.** Tabela de fontes no fim do roteiro. Número de "esforço" ("reuni 9 textos") é sempre verdadeiro.
 3. **Imagens reais só com licença livre para uso comercial:** domínio público, CC0, CC BY, CC BY-SA — com crédito. Nunca NC, ND, agência de notícias ou "achei no Google". Use `motor/imagens/commons.py`.

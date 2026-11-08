@@ -23,7 +23,7 @@ Também dá para instalar as skills de `skills/` (formato SKILL.md) para o Claud
 ## O pipeline
 
 ```
-ideia → EMBALAGEM (título + thumb antes de tudo) → ficha da história → roteiro com mapa visual
+Google Trends → ideia → EMBALAGEM (título + thumb antes de tudo) → ficha da história → roteiro com mapa visual
       → voz (Gemini TTS) → alinhamento → ritmo (pausas) → storyboard → imagens reais / IA / animações
       → render por partes → montagem + sons + trilha → mix (-13 LUFS) → QA → publicação → análise
 ```

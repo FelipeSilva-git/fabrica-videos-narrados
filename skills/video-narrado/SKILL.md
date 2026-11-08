@@ -14,9 +14,10 @@ description: Produzir um vídeo longo narrado de YouTube (história, documentár
 Antes de qualquer etapa, diga à pessoa e confira: (1) **acesso à rede para todos os domínios** (Configurações → Capacidades), para fontes, imagens com licença e voz; (2) **acesso ao navegador interno** do app Claude no computador; (3) uma **chave de API de voz** criada por ela: Google AI Studio/Gemini TTS (aistudio.google.com → Get API key; `GEMINI_KEYS_FILE` ou `GEMINI_API_KEYS`) ou ElevenLabs (Profile → API Keys; `ELEVENLABS_API_KEY`). A chave vai em arquivo ou variável de ambiente, nunca no chat nem no repositório.
 
 ## Pipeline (🔒 = aprovação da pessoa)
-pauta 🔒 → **embalagem antes do roteiro** (entrega, gatilhos, 3 títulos ≤ 50 caracteres, esboço de thumb) 🔒 → ficha da história → roteiro com mapa visual REAL/ANIM/IA e tabela de fontes 🔒 → voz (parte 1 primeiro) 🔒 → imagens reais licenciadas + prompts de IA para a pessoa gerar 🔒 → alinhamento → ritmo → storyboards → animações → render por partes → trilha + fx → mix -13 LUFS → QA de quadros → publicação → registro após 48 h / 7 dias.
+**pesquisa no Google Trends (Web + YouTube, skill `pesquisa-google-trends`)** → pauta 🔒 → **embalagem antes do roteiro** (entrega, gatilhos, 3 títulos ≤ 50 caracteres, esboço de thumb) 🔒 → ficha da história → roteiro com mapa visual REAL/ANIM/IA e tabela de fontes 🔒 → voz (parte 1 primeiro) 🔒 → imagens reais licenciadas + prompts de IA para a pessoa gerar 🔒 → alinhamento → ritmo → storyboards → animações → render por partes → trilha + fx → mix -13 LUFS → QA de quadros → publicação → registro após 48 h / 7 dias.
 
 ## Regras resumidas
+- **Google Trends sempre:** antes da pauta e da embalagem, mesmo com o tema já escolhido. As consultas em ascensão viram o ângulo; as principais viram palavras do título, da descrição e das tags. Anote só o que aparece na tela, com a data.
 - **Promessa (0–5 s):** cena 1 = thumb em movimento, frase 1 ecoa o título, entendível sem som. Nunca "olá"/vinheta.
 - **Gancho (≤ 20 s):** contexto, o que está em jogo, lacuna, esforço com número verdadeiro, "e não é só isso".
 - **Corpo:** ciclos ALTA → BAIXA → GANCHO; revelações crescendo; algo novo a cada ~3 min; parte mais forte nos últimos 20%; fonte curta e depois da revelação; terminar logo após a recompensa; fechamento circular.

@@ -11,7 +11,7 @@ Use `modelos/publicacao.md`.
   4. **Fontes** (estudos, livros, reportagens).
   5. **Créditos das imagens reais:** "r01 — Autor, Licença" para cada uma (de `CREDITOS.md`). Se estourar o limite, tire as URLs e deixe autor + licença + "Wikimedia Commons".
   6. 3 hashtags (tema em alta, tema do vídeo, #NomeDoCanal).
-- **Tags:** buscas em alta + termos explicativos ("o que é…", "história de…").
+- **Tags:** as consultas **principais** e **em ascensão** da pesquisa do Google Trends (`pesquisa-de-tendencias.md`) + termos explicativos ("o que é…", "história de…"). Use as mesmas palavras do público no título e nas 2 primeiras linhas da descrição.
 - **Playlist:** cada linha editorial tem uma; título curto e descrição de 2–3 frases com as palavras que as pessoas buscam.
 - **Horário:** suba na noite anterior (processar o HD) e publique no melhor horário do público (YouTube Studio → Público).
 - **Comentário fixado** com a pergunta do final.
